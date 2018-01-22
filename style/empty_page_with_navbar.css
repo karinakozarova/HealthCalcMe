@@ -1,0 +1,31 @@
+.navbar {
+     padding-top: 15px;
+     padding-bottom: 15px;
+     border: 0;
+     border-radius: 0;
+     margin-bottom: 0;
+     font-size: 12px;
+     letter-spacing: 5px;
+     position: fixed;
+}
+
+body {
+    line-height: 1.8;
+    font-family: 'Bellefair', serif;
+}
+
+p{
+    font-size: 100%;
+}
+
+.divs{
+     float:left;
+     width:45%;
+     padding-left: 3%;
+}
+
+.header{
+    font-size: 400%;
+    text-align: center;
+}
+

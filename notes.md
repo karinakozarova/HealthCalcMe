@@ -1,0 +1,2 @@
+# Issues
+Make navbar responsive
