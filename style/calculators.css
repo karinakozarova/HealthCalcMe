@@ -1,0 +1,8 @@
+#inner {
+  display: table;
+  margin: 0 auto;
+}
+
+#calculator_div{
+	width:100%;
+}
