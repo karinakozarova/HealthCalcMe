@@ -1,5 +1,10 @@
 function calculate()
          {
+            // modes: 
+            // bmi - 1
+            // bmr - 2
+            // needed calorie intake - 3
+
              //variables assignment
              var height = document.getElementById("height").value;
              var weight = document.getElementById("weight").value;
@@ -8,7 +13,7 @@ function calculate()
         
              if(document.getElementById("sex_female").checked === false && document.getElementById("sex_male").checked === false ){
                  alert("Enter gender!");
-                 calculations(); // reccursion
+                 calculations(); 
              }
              
              //BMI calculation
@@ -40,6 +45,21 @@ function calculate()
                     alert("If you don't enter your training activity, we can't calculate your calorie intake.");
             }
       
+       //Needeed calorie intake based on the activity level calculations
+             var calorie_intake;
+             
+             if (document.getElementById("BMI").checked === true) {
+                 var mode = 1;
+             } else if (document.getElementById("BMR").checked === true){
+                var mode = 2;
+             } else if (document.getElementById("intake").checked === true){
+                 var mode = 3;
+            } else if (document.getElementById("all").checked === true){
+                 var mode = 4;
+             } else {
+                    alert("Please choose what to calculate.");
+            }
+
              //alert(calorie_intake);  //use only when debugging
              
             //checking if user input is legit         
@@ -48,7 +68,10 @@ function calculate()
                  if (height > 55 && height < 290)
                  {
                      if (weight > 15 && weight < 290){
-                         alert("Your BMI is " + BMI + ".\n" + "Your BMR is: " + BMR + ".\nYour calorie intake should be: " + calorie_intake);
+                        if(mode == 1) alert("Your BMI is " + BMI + ".\n");
+                        else if(mode == 2) alert("Your BMR is: " + BMR + ".\n");
+                        else if(mode == 3)alert("Your calorie intake should be: " + calorie_intake);
+                        else alert("Your BMI is " + BMI + ".\n" + "Your BMR is: " + BMR + ".\nYour calorie intake should be: " + calorie_intake);
                      } else alert("Wrong weight input, please try again");
                      
                  } else alert("Wrong height input, please try again");

@@ -78,10 +78,34 @@
                     </label>
                     
                 </div>
-                
-                
-                <br> <br> <button onclick="calculate()" type="button" class="btn btn-success"> Calculate </button>
+                <br> 
+                <p> What to calculate: </p>
+                <div class="mode-choose">
+                    <label>
+                        <input type="radio" name="mode" id="BMI">
+                        Calculate BMI
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="mode" id="BMR">
+                        Calculate BMR
+                    </label> <br>
+                    
+                    <label>
+                        <input type="radio" name="mode" id="intake">
+                        Calculate calorie intake
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="mode" id="all">
+                        Calculate all
+                    </label>
+
+                    
+                </div>
             </div></div>
+            
+            <div id="wrapper"> <br> <br> <button onclick="calculate()" type="button" class="btn btn-success" id = "calculator">  Calculate </button></div>
             <script src = "calculations.js">    </script>
         </body>
     </html>
