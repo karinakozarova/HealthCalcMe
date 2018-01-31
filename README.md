@@ -24,9 +24,9 @@
 ## Чекпойнти
 
 ### Чекпойнт 1 (12.02.2018, <= 15.02.2018): 
-* [x] Скелет на проекта
-* [x] Страница 1 - Landing page
-* [x] Хостване (чрез GitHub Pages)
+* [x] Скелет на проекта - в репото
+* [x] Страница 1 - Landing page - Може да се достъпи на http://karinakozarova.me/HealthCalcMe/landing_page.html
+* [x] Хостване (чрез GitHub Pages) - http://karinakozarova.me/HealthCalcMe/
 
 ### Чекпойнт 2 (14.03.2018, <= 15.03.2018):
 * [ ] Страница 2 - Shop
