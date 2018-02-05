@@ -17,6 +17,8 @@
 }
 
 .cool_button {
+	margin-left: 30%;
+	font-size: 50% !important;
 	box-shadow: 0px 10px 14px -7px #3dc21b;
 	background-color:#44c767;
 	border-radius:8px;
