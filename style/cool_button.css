@@ -1,6 +1,6 @@
 .cool_button {
 	margin-left: 30%;
-	font-size: 50% !important;
+	font-size: 50%;
 	box-shadow: 0px 10px 14px -7px #3dc21b;
 	background-color:#44c767;
 	border-radius:8px;
@@ -15,4 +15,7 @@
 .cool_button:active {
 	position:relative;
 	top:1px;
+}
+.fontier{ // for buttons in the shop webpage
+	font-size: 150%;
 }
