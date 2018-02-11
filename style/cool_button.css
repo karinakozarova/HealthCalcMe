@@ -8,9 +8,6 @@
 	cursor:pointer;
 	color:#ffffff;
 	padding:13px 32px;
-	width: 50%;
-	margin:auto;
-	display:block
 }
 .cool_button:hover {
 	background-color:#5cbf2a;
