@@ -1,35 +1,3 @@
-.navbar {
-     padding-top: 15px;
-     padding-bottom: 15px;
-     border: 0;
-     border-radius: 0;
-     margin-bottom: 10;
-     font-size: 12px;
-     letter-spacing: 5px;
-     position: fixed;
-}
-
-body {
-    line-height: 1.8;
-    font-family: 'Bellefair', serif;
-    background-color: green;
-}
-
-p{
-    font-size: 100%;
-}
-
-
-.header{
-    font-size: 400%;
-    text-align: center;
-}
-
-.navbar-nav > li > a:hover {
-    color: #333;
-    background-color: transparent;
-}
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -52,7 +20,7 @@ h1 {
   margin: .67em 0;
   font-size: 2em;
 }
-
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
   *:before,
