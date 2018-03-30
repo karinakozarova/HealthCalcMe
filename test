@@ -1,0 +1,92 @@
+package org.elsys.gates;
+
+public abstract class GateFactory {
+
+	public static Gate makeXorGate(Wire in1, Wire in2, Wire out, String name) {
+		CompositeGate xorGate = new CompositeGate(name);
+
+		xorGate.addInput(in1);
+		xorGate.addInput(in2);
+		xorGate.addOutput(out);
+
+		Wire a = new Wire("xorA");
+		Wire b = new Wire("xorB");
+		Wire c = new Wire("xorC");
+
+		Gate orGate = new OrGate(in1, in2, a);
+		Gate andGate1 = new AndGate(in1, in2, b);
+		Gate notGate = new InverterGate(b, c);
+		Gate andGate2 = new AndGate(a, c, out);
+
+		xorGate.addGate(orGate);
+		xorGate.addGate(andGate1);
+		xorGate.addGate(notGate);
+		xorGate.addGate(andGate2);
+
+		return xorGate;
+	}
+
+	public static Gate makeXorGate(Wire in1, Wire in2, Wire out) {
+		return makeXorGate(in1, in2, out, "XorGate");
+	}
+
+	public static Gate makeHalfAdder(Wire a, Wire b, Wire s, Wire c, String name) {
+		CompositeGate halfAdder = new CompositeGate(name);
+		Gate xorGate = new XorGate(a, b, s);
+		Gate andGate = new AndGate(a, b, c);
+		halfAdder.addGate(xorGate);
+		halfAdder.addGate(andGate);
+		return halfAdder;
+	}
+
+	public static Gate makeHalfAdder(Wire a, Wire b, Wire s, Wire c) {
+		return makeHalfAdder(a, b, s, c, "HalfAdder");
+	}
+
+	public static Gate makeFullAdder(Wire a, Wire b, Wire cIn, Wire sum, Wire cOut, String name) {
+		CompositeGate fullAdder = new CompositeGate(name);
+
+		Wire s1 = new Wire("xorA");
+		Wire c1 = new Wire("xorB");
+		Wire c2 = new Wire("xorC");
+
+		Gate halfAdder1 = GateFactory.makeHalfAdder(a, b, s1, c1);
+		Gate halfAdder2 = GateFactory.makeHalfAdder(cIn, s1, sum, c2);
+		Gate OrGate = new OrGate(c1, c2, cOut);
+		
+		fullAdder.addGate(halfAdder1);
+		fullAdder.addGate(halfAdder2);
+		fullAdder.addGate(OrGate);
+		
+		return fullAdder;
+	}
+
+	public static Gate makeFullAdder(Wire a, Wire b, Wire cIn, Wire sum, Wire cOut) {
+		return makeFullAdder(a, b, cIn, sum, cOut, "FullAdder");
+	}
+	
+	public static Gate makeRippleCarryAdder(Wire a[], Wire b[], Wire cIn, Wire sum[], Wire cOut) {
+		assert a.length == b.length;
+		assert a.length == sum.length;
+		int count = a.length;
+		
+		CompositeGate rippleCarryAdder = new CompositeGate("rippleCarry");
+		rippleCarryAdder.addInput(cIn);
+		rippleCarryAdder.addOutput(cOut);
+		Wire input = cIn;
+						
+		for(int i = 0; i < a.length; i++) {	
+			sum[i].setSignal(a[i].getSignal()& b[i].getSignal());
+			Wire output = new Wire("outputWire");
+			if(i == count - 1) output = cOut;
+			Gate fullAdder = makeFullAdder(a[i],b[i],input,sum[i],output);
+			input = output;
+			rippleCarryAdder.addInput(a[i]);
+			rippleCarryAdder.addInput(b[i]);
+			rippleCarryAdder.addOutput(sum[i]);
+			rippleCarryAdder.addGate(fullAdder);
+		}
+		
+		return rippleCarryAdder;
+	}
+}
