@@ -46,5 +46,5 @@
 
 ### Забележки:
 * Репо - https://github.com/karinakozarova/HealthCalcMe
-* Хоства се на  - http://karinakozarova.me/HealthCalcMe/ 
+* Хоства се на  - https://karinakozarova.github.io/HealthCalcMe/
 * Няма да има back-end. 
