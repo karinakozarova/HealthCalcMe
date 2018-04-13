@@ -9,27 +9,37 @@
         <link rel="stylesheet" type="text/css" href="style/zoom.css">
         <link rel="stylesheet" href="style/nabar_boot.css">
         <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/> 
+        <style type="text/css">
+            .typedtext{
+              color:black;
+              padding-top: 20%;
+            }
+
+        </style>
     </head>
     <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand">HealthCalcMe</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="./empty_page_with_navbar.html"> <div class="zoom">LANDING PAGE</div></a></li> 
+                        <li><a href="./shop.html"><div class="zoom">SHOP</div></a></li> 
+                        <li><a href="./calculators.html"><div class="zoom">CALCULATORS</div></a></li> 
+                        <li> <a href = "./nutrition.html"><div class="zoom"> NUTRITION </div></a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand">HealthCalcMe</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                     <li><a href="./landing_page.html"> <div class="zoom">LANDING PAGE</div></a></li> 
-                    <li><a href="./shop.html"><div class="zoom">SHOP</div></a></li> 
-                    <li><a href="./calculators.html"><div class="zoom">CALCULATORS</div></a></li> 
-                    <li> <a href = "./nutrition.html"><div class="zoom"> NUTRITION </div></a></li> 
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div style="background-color:#1a1a1a;">  
         <h1 class="cover-heading">HealthCalcMe</h1>  
-    </div>
+        <p style="padding: 5%;"> </p>
+
+        <div id="typedtext" style = "text-align: center;text-indent: 5%;font-size: 200%;"></div>
+
+        <script src="scripts/typer.js">  </script>
     </body>
 </html>
