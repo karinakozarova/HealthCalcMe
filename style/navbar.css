@@ -1,0 +1,39 @@
+.header {
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  padding: 1%;
+  border-bottom: 3px solid green;
+  overflow: hidden;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #777;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a.active {
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:white;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}

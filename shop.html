@@ -8,88 +8,63 @@
         <link rel="stylesheet" type="text/css" href="style/empty_page_with_navbar.css">
         <link rel="stylesheet" type="text/css" href="style/zoom.css">
         <link rel="stylesheet" type="text/css" href="style/cool_button.css">
-        <link rel="stylesheet" href="style/nabar_boot.css">
+        <link rel="stylesheet" href="style/navbar.css">
         <link rel="stylesheet" href="style/bootstrap.css">
         <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./style/shop.css">
     </head>
+
     <body>
+      <div id="navbar">
+        <a href = "">  <div class="zoom">HealthCalcMe</div> </a>
+        <div style="float: right;"> 
+          <a href="./empty_page_with_navbar.html"> <div class="zoom">LANDING PAGE</div></a>
+          <a href="./shop.html"><div class="zoom">SHOP</div></a>
+          <a href="./calculators.html"><div class="zoom">CALCULATORS</div></a>
+          <a href = "./nutrition.html"><div class="zoom"> NUTRITION </div></a></div>
+      </div>
+      <br>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand">HealthCalcMe</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                      <a href="./empty_page_with_navbar.html"> 
-                        <div class="zoom">LANDING PAGE</div>
-                      </a>
-                    </li> 
-                    <li>
-                      <a href="./shop.html">
-                        <div class="zoom">SHOP</div>
-                      </a>
-                    </li> 
-                    <li>
-                      <a href="./calculators.html">
-                        <div class="zoom">CALCULATORS</div>
-                      </a>
-                    </li> 
-                    <li> 
-                      <a href = "./nutrition.html">
-                        <div class="zoom"> NUTRITION </div>
-                      </a>
-                    </li> 
-                </ul>
-            </div>
+      <h1> Shop </h1>
+
+      <!-- First Photo Grid-->
+      <div class="row-padding space-bottom" >
+        <div class="third container margin-bottom space-bottom">
+          <img src="./resources/1.jpg" style="width:100%" class="hover-opacity">
+            <p><b>Lorem Ipsum</b></p>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br> <br> <a onclick="buy_item();" class="cool_button fontier displayer" ">Buy now</a> <br> </p>
         </div>
-    </nav>
-
-
-    <div class = "space-bottom">  
-        <h1 class="cover-heading">HealthCalcMe</h1>    
-    </div>
-    <script src="scripts/shop.js"></script>
-
-    <h1> Shop </h1>
-
-    <!-- First Photo Grid-->
-    <div class="row-padding space-bottom" >
-      <div class="third container margin-bottom space-bottom">
-        <img src="./resources/1.jpg" style="width:100%" class="hover-opacity">
-          <p><b>Lorem Ipsum</b></p>
-          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br> <br> <a onclick="buy_item();" class="cool_button fontier displayer" ">Buy now</a> <br> </p>
-      </div>
-      <div class="third container margin-bottom space-bottom">
-        <img src="./resources/2.png" style="width:100%" class="hover-opacity">
-          <p><b>Lorem Ipsum</b></p>
-          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br> <br> <a onclick="buy_item();" class="cool_button fontier displayer">Buy now</a> <br> </p>
-      </div>
-      <div class="third container space-bottom">
-        <img src="./resources/1.jpg" style="width:100%" class="hover-opacity">
-          <p><b>Lorem Ipsum</b></p>
-          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br> <br> <a onclick="buy_item();" class="cool_button fontier displayer" ">Buy now</a> <br> </p>
-      </div>
-    </div>
-  
-    <!-- Second Photo Grid-->
-    <div class="row-padding space-bottom">
-      <div class="third container margin-bottom space-bottom">
-        <img src="./resources/4.jpg" style="width:100%" class="hover-opacity">
-          <p><b>Lorem Ipsum</b></p>
-          <p >Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br> <br> <a onclick="buy_item();" class="cool_button fontier displayer" ">Buy now</a> <br> </p>
+        <div class="third container margin-bottom space-bottom">
+          <img src="./resources/2.png" style="width:100%" class="hover-opacity">
+            <p><b>Lorem Ipsum</b></p>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br> <br> <a onclick="buy_item();" class="cool_button fontier displayer">Buy now</a> <br> </p>
         </div>
-      <div class="third container margin-bottom space-bottom">
-        <img src="./resources/5.jpg" style="width:100%" class="hover-opacity">
-          <p><b>Lorem Ipsum</b></p>
-          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br> <br> <a onclick="buy_item();" class="cool_button fontier displayer" ">Buy now</a> <br> </p>
+        <div class="third container space-bottom">
+          <img src="./resources/1.jpg" style="width:100%" class="hover-opacity">
+            <p><b>Lorem Ipsum</b></p>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br> <br> <a onclick="buy_item();" class="cool_button fontier displayer" ">Buy now</a> <br> </p>
         </div>
-      <div class="third container space-bottom">
-        <img src="./resources/6.jpg" style="width:100%;padding-top: 5%; padding-bottom: 5%;" class="hover-opacity">
-          <p><b>Lorem Ipsum</b></p>
-          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br> <br> <a onclick="buy_item();" class="cool_button fontier displayer" ">Buy now</a> <br> </p>
       </div>
+    
+      <!-- Second Photo Grid-->
+      <div class="row-padding space-bottom">
+        <div class="third container margin-bottom space-bottom">
+          <img src="./resources/4.jpg" style="width:100%" class="hover-opacity">
+            <p><b>Lorem Ipsum</b></p>
+            <p >Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br> <br> <a onclick="buy_item();" class="cool_button fontier displayer" ">Buy now</a> <br> </p>
+          </div>
+        <div class="third container margin-bottom space-bottom">
+          <img src="./resources/5.jpg" style="width:100%" class="hover-opacity">
+            <p><b>Lorem Ipsum</b></p>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br> <br> <a onclick="buy_item();" class="cool_button fontier displayer" ">Buy now</a> <br> </p>
+          </div>
+        <div class="third container space-bottom">
+          <img src="./resources/6.jpg" style="width:100%;padding-top: 5%; padding-bottom: 5%;" class="hover-opacity">
+            <p><b>Lorem Ipsum</b></p>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.<br> <br> <a onclick="buy_item();" class="cool_button fontier displayer" ">Buy now</a> <br> </p>
+        </div>
+            <script src="scripts/shop.js"></script>
+            <script src="scripts/navbar.js"></script>
+
     </body>
 </html>

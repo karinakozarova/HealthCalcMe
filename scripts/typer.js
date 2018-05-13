@@ -1,12 +1,10 @@
 
 // set up text to print, each item in array is new line
 var aText = new Array(
-"So.. You're probably thinking what the fuck is this", 
-"Well, that's my Web Design course projects",
+"So.. You're probably thinking what the f*ck is this", 
+"Well, that's my Web Design course project",
 "It basically consists of a few pages and links for them",
 "but no real content actually...",
-"Some day maybe I will also add content",
-"But currently it's no priority for me.",
 "Have fun exploring this site!"
 );
 var iSpeed = 100; // time delay of print out
