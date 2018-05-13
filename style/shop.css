@@ -12,8 +12,13 @@ body{
 
 img{
 	border-style:none;
+	width:100%;
 }
 
+.last{
+	padding-top: 5%; 
+	padding-bottom: 5%;
+}
 .third{
 	float:left;
 	width:100%;
