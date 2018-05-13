@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
 }
+
 #inner {
   display: table;
   margin: 0 auto;
