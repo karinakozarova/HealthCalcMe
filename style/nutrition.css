@@ -1,11 +1,10 @@
-body{
-	color: #5e5e5e;
-}
-
 a{
 	text-decoration: none;
 }
 
+img{
+	width: 100%;
+}
 .column {
     width:33%;
     float:left;

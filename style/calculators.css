@@ -14,6 +14,20 @@
 }
 
 #calculator{
-	margin-left: 6% ;text-align:center;margin-right: 5%;
+	margin-left: 6% ;
+	text-align:center;
+	margin-right: 5%;
 	width: 80%;
+}
+
+body{
+	color: #5e5e5e;
+}
+
+img{
+	max-height: 40%;
+	max-width: 40%;
+	float: left;
+	padding-left: 15%;
+	padding-top:1%;
 }
