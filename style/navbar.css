@@ -37,3 +37,11 @@
 .sticky + .content {
   padding-top: 60px;
 }
+
+html{
+  font-family: 'Bellefair', serif;
+}
+
+p{
+  font-size: 130%;
+}
