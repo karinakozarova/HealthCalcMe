@@ -1,7 +1,6 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "Hello!",
-    "And welcome",
+    "Hello And welcome",
     "that's my Web Design course project",
     "Have fun exploring this site!"
 );
